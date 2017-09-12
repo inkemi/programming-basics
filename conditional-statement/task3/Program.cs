@@ -18,7 +18,7 @@ namespace task3
             int evaluatedNumber;
             int.TryParse(userInput, out evaluatedNumber);
 
-            int modulo = evaluatedNumber / 2;
+            int modulo = evaluatedNumber % 2;
 
             // If userInput is 0
 
