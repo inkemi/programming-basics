@@ -7,61 +7,83 @@ namespace task4
         static void Main(string[] args)
         {
             // Prompt user
-            Console.Write("Please enter 3 number: ");
+            Console.Write("Please enter 3 numbers: ");
 
             // Read user input
-            string userInput;
-            int x;
-            int y;
-            int z;
-            Console.ReadLine();
-            Console.ReadLine();
-            Console.ReadLine();
+            string userInput1;
+            string userInput2;
+            string userInput3;
 
+            Console.WriteLine("Give three numbers: ");
 
+            Console.Write("Number 1: ");
+            userInput1 = Console.ReadLine();
+
+            Console.Write("Number 2: ");
+            userInput2 = Console.ReadLine();
+
+            Console.Write("Number 3: ");
+            userInput3 = Console.ReadLine();
 
             // Evaluate user input
 
-            int evaluatedNumber;
-            int.TryParse(userInput, out evaluatedNumber);
+            int number1;
+            int.TryParse(userInput1, out number1);
 
-            // IF z is smallest
+            int number2;
+            int.TryParse(userInput2, out number2);
 
-            if (x > y) && (y > z)
+            int number3;
+            int.TryParse(userInput3, out number3);
+
+           
+
+            // IF number1 is smallest
+
+            if (number2 > number3 && number3 > number1)
             {
-                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", z, y, x);
+                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number1, number3, number2);
             }
 
-            if else (y > x) && (x > z)
+            else if (number3 > number2 && number2 > number1)
             {
-                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", y, x, z);
+                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number1, number2, number3);
             }
 
-            // IF y is smallest
+            // IF number2 is smallest
 
-            if else (x > z) && (z > y)
+            else if (number1 > number3 && number3 > number2)
             {
-                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", z, y, x);
-            }
-
-
-            if (z > x) && (x > y)
-            {
-                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", y, x, z);
-            }
-
-            // IF x is smallest
-
-            if (z > y) && (y > x)
-            {
-                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", x, y, x);
+                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number2, number3, number1);
             }
 
 
-            if (y > z) && (z > x)
+            else if (number3 > number1 && number1 > number2)
             {
-                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", y, x, z);
+                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number2, number1, number3);
             }
+
+            // IF number3 is smallest
+
+            else if (number1 > number2 && number2 > number3)
+            {
+                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number3, number2, number1);
+            }
+
+
+            else if (number2 > number1 && number1 > number3)
+            {
+                Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number3, number1, number2);
+            }
+
+            else 
+            {
+                Console.WriteLine("Something went wrong!");
+                Console.WriteLine("Numbers are: {0}, {1}, {2}", number1, number2, number3);
+            }
+
+            Console.ReadKey();
+
         }
     }
 }
