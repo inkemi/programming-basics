@@ -27,7 +27,7 @@ namespace task2
                 int result;
                 result = 0;
                 int result2;
-                result2 = 1;
+                result2 = 0;
                 int i;
                 i = 1;
                 for (i = 1; i <= n; i++)
