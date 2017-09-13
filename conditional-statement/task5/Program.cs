@@ -8,7 +8,6 @@ namespace task5
         {
             double normal;
             normal = 16.00;
-            string under7;
             double over65; 
             over65 = 0.50;
             double between715;
