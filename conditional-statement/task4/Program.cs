@@ -36,10 +36,7 @@ namespace task4
             int number3;
             int.TryParse(userInput3, out number3);
 
-           
-
             // IF number1 is smallest
-
             if (number2 > number3 && number3 > number1)
             {
                 Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number1, number3, number2);
@@ -51,12 +48,10 @@ namespace task4
             }
 
             // IF number2 is smallest
-
             else if (number1 > number3 && number3 > number2)
             {
                 Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number2, number3, number1);
             }
-
 
             else if (number3 > number1 && number1 > number2)
             {
@@ -64,7 +59,6 @@ namespace task4
             }
 
             // IF number3 is smallest
-
             else if (number1 > number2 && number2 > number3)
             {
                 Console.WriteLine("Numbers are small to big: {0}, {1}, {2}", number3, number2, number1);

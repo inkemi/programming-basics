@@ -46,7 +46,6 @@ namespace task5
                 {
                     mtkMember = false;
                 }
-
             }
 
             bool student1 = false;
